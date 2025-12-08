@@ -1,0 +1,79 @@
+<!Doctype html>
+<html>
+<style>
+    /* 1. Basic Layout */
+    .contact-wrapper {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    /* 2. The Inputs */
+    .simple-input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Keeps padding inside the box */
+    }
+
+    /* 3. The Submit Button */
+    .send-btn {
+        background-color: #4b0082; /* UiTM Purple */
+        color: white;
+        padding: 12px;
+        border: none;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    /* 4. The Grey Social Box at the bottom */
+    .social-box {
+        background-color: #f4f4f4; /* Light grey background */
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 8px;
+    }
+
+    /* 5. The Social Buttons */
+    .social-btn {
+        display: inline-block; /* Makes them sit next to each other */
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+
+    /* specific colors for each app */
+    .whatsapp { background-color: #25D366; }
+    .instagram { background-color: #C13584; }
+    .facebook { background-color: #0077b5; }
+</style>
+
+<div class="contact-wrapper">
+
+    <h2>Contact Me</h2>
+    <p>Have a question? Send me a message!</p>
+
+    <form action="mailto:ezhar.anass@gmail.com" method="post" enctype="text/plain">
+        <input type="email" name="email" class="simple-input" placeholder="Your Email Address" required>
+        <input type="text" name="name" class="simple-input" placeholder="Your Name" required>
+        <button type="submit" class="send-btn">SUBMIT</button>
+    </form>
+
+    <div class="social-box">
+        <p>Or connect with me here:</p>
+        
+        <a href="https://wa.me/1119845207" target="_blank" class="social-btn whatsapp">WhatsApp</a>
+        <a href="https://www.instagram.com/eizhar.anass/" target="_blank"class="social-btn instagram">Instagram</a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://web.facebook.com/profile.php?id=100006450512143"target="_blank" class="social-btn facebook">Facebook </a>
+    </div>
+
+</div>
